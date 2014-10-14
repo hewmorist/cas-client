@@ -1,0 +1,33 @@
+{
+  "name": "cas-client",
+  "description": "Middleware CAS Client for Express used with Drupal CAS Module",
+  "version": "0.0.1",
+  "keywords": [
+    "cas",
+    "client",
+    "jasig"
+  ],
+  "homepage": "http://www.netpropagate.com",
+  "author": {
+    "name": "Peter Hew",
+    "email": "hewmorist@yahoo.com"
+  },
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hewmorist/cas-client"
+  },
+  "scripts": {
+  },
+  "config": {
+    "cas_host": "localhost",
+    "cas_base_url": "http://localhost:3000"
+  },
+  "devDependencies": {
+  },
+  "private": true,
+  "dependencies": {}
+}
