@@ -9,7 +9,7 @@ var auth = cas.getMiddleware('https://www.mpxreach.com/cas', 'http://10.0.0.8:88
 
 
 server.use(cookieParser());
-server.use(session({ 'secret':'Modern Major General', 
+server.use(session({ 'secret':'Zoothorn Rollo', 
                       saveUninitialized: true,
                       resave: true}));
 server.use(errorhandler());
@@ -19,7 +19,7 @@ var router = express.Router();
 
 router.get('/', auth, function(request,response){
         if(!request.session.authenticatedUser) {
-                console.log("weird");
+                console.log("No CAS Login");
                 console.dir(request.session);
         } else {
              console.dir(request.session);
